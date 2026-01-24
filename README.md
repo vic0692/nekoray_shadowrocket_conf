@@ -1,0 +1,1 @@
+# nekoray_shadowrocket_conf
