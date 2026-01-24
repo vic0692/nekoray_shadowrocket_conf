@@ -1,0 +1,43 @@
+[{
+    "action": "hijack-dns",
+    "protocol": "dns"
+}
+,{
+    "action": "route",
+    "ip_cidr": [
+        "192.168.1.1",
+        "192.168.2.1"
+    ],
+    "outbound": "direct"
+}
+,{
+    "action": "route",
+    "outbound": "direct",
+    "rule_set": [
+        "https://github.com/vic0692/nekoray_shadowrocket_conf/releases/latest/download/domains_direct_rs.srs"
+    ]
+}
+,{
+    "action": "route",
+    "outbound": "proxy",
+    "rule_set": [
+        "https://github.com/1andrevich/Re-filter-lists/releases/latest/download/ruleset-domain-refilter_domains.srs",
+        "https://github.com/1andrevich/Re-filter-lists/releases/latest/download/ruleset-ip-refilter_ipsum.srs"
+    ]
+}
+,{
+    "action": "route",
+    "outbound": "proxy",
+    "rule_set": [
+        "https://github.com/vic0692/nekoray_shadowrocket_conf/releases/latest/download/domains_media_sfw_rs.srs",
+        "https://github.com/vic0692/nekoray_shadowrocket_conf/releases/latest/download/domains_media_nsfw_rs.srs"
+    ]
+}
+,{
+    "action": "route",
+    "outbound": "proxy",
+    "process_name": [
+        "Telegram.exe"
+    ]
+}
+]
