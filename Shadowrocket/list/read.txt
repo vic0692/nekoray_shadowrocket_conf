@@ -1,2 +1,3 @@
 Пробуем создать списки для конфигурации shadowrocket
+RULE-SET,https://raw.githubusercontent.com/vic0692/nekoray_shadowrocket_conf/main/Shadowrocket/list/domains_media_sfw.list,PROXY
 Требует проверки
