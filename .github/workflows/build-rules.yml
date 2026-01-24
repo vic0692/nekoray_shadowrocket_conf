@@ -51,7 +51,7 @@ jobs:
         run: |
           mkdir -p build
           for f in rules/singbox/*.json; do
-            sing-box rule-set compile "$f"
+            ./sing-box rule-set compile "$f"
             mv "${f%.json}.srs" build/
           done
 
