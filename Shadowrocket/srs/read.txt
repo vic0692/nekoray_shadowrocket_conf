@@ -1,2 +1,3 @@
-Все новые домены будут подхватываться автоматически после обновления файлов на GitHub если указать строку вида RULE-SET,https://cdn.jsdelivr.net/gh/vic0692/nekoray_shadowrocket_conf@main/Shadowrocket/srs/domains_media_sfw.srs,PROXY
+Все новые домены будут подхватываться автоматически после обновления файлов на GitHub если указать строку вида 
+RULE-SET,https://cdn.jsdelivr.net/gh/vic0692/nekoray_shadowrocket_conf@main/Shadowrocket/srs/domains_media_sfw.srs,PROXY
 Требует проверки
