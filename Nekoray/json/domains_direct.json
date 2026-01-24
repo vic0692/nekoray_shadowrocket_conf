@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain_suffix": [
+        "aliexpress.ru",
+        "amazon.com",
+        "anilib.me",
+        "animelib.me",
+        "animelib.org",
+        "api.cdnlibs.org",
+        "cdnlibs.org",
+        "cobalt.tools",
+        "game-guessr.com",
+        "gwtr-irl-is1.ru",
+        "gwtr-swed-aez1.ru",
+        "imglib.info",
+        "iptv.rt.ru",
+        "japit.novel.tl",
+        "mangabuff.ru",
+        "mangalib.me",
+        "move.com",
+        "myip.ru",
+        "ngenix.net",
+        "novel.tl",
+        "plex.tv",
+        "restream-media.net",
+        "rt.ru",
+        "slashlib.me",
+        "stockmann.ru",
+        "targetads.io",
+        "v2.animelib.org",
+        "v3.animelib.org",
+        "vk.com",
+        "wink.ru",
+        "ya.ru",
+        "yandex.ru"
+      ]
+    }
+  ]
+}
