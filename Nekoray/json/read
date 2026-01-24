@@ -1,0 +1,2 @@
+Используем для генерации .srs файлов для конфигурации Nekoray
+sing-box rule-set compile "path\domains_direct.json" -o "path\domains_direct_suf.srs"
