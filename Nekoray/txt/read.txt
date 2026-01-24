@@ -1,0 +1,3 @@
+Можно использовать для генерации .srs
+Будет работать как domain:["amazon.com"]
+sing-box rule-set convert -t adguard path\domains_direct.txt -o path\domains_direct.srs
