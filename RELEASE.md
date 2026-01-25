@@ -1,4 +1,4 @@
-## 🧩 Rule-sets (Auto build)
+## Rule-sets (Auto build)
 
 ### Форматы
 - **`.srs`** — nekoray / sing-box
