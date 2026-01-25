@@ -2,6 +2,20 @@
 
 Генерируются .srs и .list для конфигов nekoray и shadowrocket
 
-Вносим изменения в rules/*.txt автоматически генерируются файлы и создается релиз
+### Категории
+- ANIME
+- CDN
+- CHATBOTS
+- HENTAI
+- IMAGES
+- MISC
+- PORN
+- SOFTWARE
+- VIDEO
 
-В конфигурациях Nekoray/*.json и Shadowrocket/*.conf включил использование сгенерированных файлов
+### Обновление
+Релиз собирается автоматически при изменении файлов rules/source/*.txt
+
+### Использование
+- nekoray → `rule_set`
+- Shadowrocket → `RULE-SET`
