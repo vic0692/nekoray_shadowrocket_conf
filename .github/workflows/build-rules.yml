@@ -63,6 +63,7 @@ jobs:
         with:
           tag_name: auto-${{ github.run_number }}
           name: Auto build ${{ github.run_number }}
+          body_path: RELEASE.md
           files: |
             build/*.srs
             rules/shadowrocket/*.list
