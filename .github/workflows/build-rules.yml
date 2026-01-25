@@ -66,4 +66,6 @@ jobs:
           files: |
             build/*.srs
             rules/shadowrocket/*.list
+            Nekoray/*.json
+            Shadowrocket/*.conf
 
