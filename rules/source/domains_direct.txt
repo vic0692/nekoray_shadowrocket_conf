@@ -21,6 +21,7 @@ novel.tl
 plex.tv
 restream-media.net
 rt.ru
+shikimori.one
 slashlib.me
 stockmann.ru
 targetads.io
