@@ -19,13 +19,10 @@ jobs:
           
       - name: Download sing-box
         run: |
-          VERSION=$(curl -s https://api.github.com/repos/SagerNet/sing-box/releases/latest | grep tag_name | cut -d '"' -f4)
-          echo "Using sing-box $VERSION"
-      
-          wget https://github.com/SagerNet/sing-box/releases/download/$VERSION/sing-box-${VERSION#v}-linux-amd64.tar.gz
-          tar -xzf sing-box-${VERSION#v}-linux-amd64.tar.gz
-      
-          mv sing-box-${VERSION#v}-linux-amd64/sing-box ./sing-box
+          VERSION=1.12.17
+          wget https://github.com/SagerNet/sing-box/releases/download/v$VERSION/sing-box-$VERSION-linux-amd64.tar.gz
+          tar -xzf sing-box-$VERSION-linux-amd64.tar.gz
+          mv sing-box-$VERSION-linux-amd64/sing-box ./sing-box
           chmod +x ./sing-box
           ./sing-box version
 
@@ -50,12 +47,26 @@ jobs:
             echo '] } ] }' >> "$json"
           done
 
+      - name: Validate sing-box JSON
+        run: |
+          for f in rules/singbox/*.json; do
+            jq empty "$f"
+          done
+
       - name: Compile SRS
         run: |
           mkdir -p build
           for f in rules/singbox/*.json; do
+            echo "Compiling $f"
             ./sing-box rule-set compile "$f"
-            mv "${f%.json}.srs" build/
+            SRS="${f%.json}.srs"
+      
+            if [ ! -s "$SRS" ]; then
+              echo "ERROR: $SRS is empty or missing"
+              exit 1
+            fi
+      
+            mv "$SRS" build/
           done
 
       - name: Create Release
